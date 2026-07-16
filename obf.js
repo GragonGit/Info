@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  setContact();
   document.getElementById("showButton").addEventListener("click", onImpButtonClick);
 });
 
 let isDeobf = false;
 function onImpButtonClick() {
   if (isDeobf) return;
+  setContact();
   isDeobf = true;
 
   const elements = document.getElementsByClassName("obf");
