@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir dist
           cp index.html styles.css dist/
-          sed "s|__SET_CONTACT__|$SET_CONTACT|g" obf.js > dist/obf.js
+          node inject.js
 
       - uses: actions/upload-pages-artifact@v3
         with:

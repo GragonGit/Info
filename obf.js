@@ -26,4 +26,6 @@ function deobf(text) {
     .join('');
 }
 
-function setContact() { __SET_CONTACT__ }
+function setContact() {
+  // __SET_CONTACT__
+}
